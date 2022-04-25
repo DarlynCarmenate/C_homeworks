@@ -6,8 +6,8 @@ string a = Console.ReadLine();
 int N = int.Parse(a);
 
 int i = 0;
-while (i <= N)
+while (i < N)
 {
-i = i + 2;
+i += 2;
 Console.Write($"{i} ");
 }
