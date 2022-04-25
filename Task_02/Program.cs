@@ -2,6 +2,7 @@
 
 Console.WriteLine("Введите число: ");
 string n = Console.ReadLine();
-int number = int.Parse(n);
+double number = double.Parse(n);
 
-Console.WriteLine((double) 1 / number);
+double result = (double) 1 / number;
+Console.WriteLine(result);
