@@ -1,9 +1,11 @@
 ﻿// Напишите программу, которая выводит 
 // случайное трёхзначное число и удаляет вторую цифру этого числа.
 
-void MakeItTwo()
+void MakeItTwo(int three)
 {
-    int rnd = new Random().Next(100, 1000);
-    Console.WriteLine($"{rnd} -> {rnd / 100}{rnd % 10}");
+    Console.WriteLine($"{three / 100}{three % 10}");
 }
-MakeItTwo();
+
+int rnd = new Random().Next(100, 1000);
+Console.Write($"{rnd} -> ");
+MakeItTwo(rnd);
