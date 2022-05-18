@@ -1,7 +1,8 @@
-﻿// Напишите программу, которая на вход принимает трехзнаное число, а на выходе
+﻿// Напишите программу, которая на вход принимает трехзначное число, а на выходе
 // показывает вторую цифру этого числа
 
-int Prompt(string message){
+int Prompt(string message)
+{
     Console.Write(message);
     string input = Console.ReadLine();
     int value = int.Parse(input);
@@ -16,7 +17,7 @@ void SecondNum(int number)
     }
     else
     {
-    Console.WriteLine($"The second number is: {number/10%10}");
+        Console.WriteLine($"The second number is: {number / 10 % 10}");
     }
 }
 
