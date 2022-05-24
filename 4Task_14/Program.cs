@@ -12,3 +12,4 @@ int DigitPow(int a, int b)
 }
 
 Console.WriteLine(DigitPow(3, 5));
+Console.WriteLine(DigitPow(2, 4));
