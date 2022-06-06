@@ -1,6 +1,6 @@
 ﻿// Задайте двумерный массив размером m×n, заполненный случайными вещественными числами.
 
- double[,] FillArray(int row, int column)
+ double[,] FillArray(int row, int column, int from, int to)
 {
 	double[,] array = new double[row, column];
 	Random rnd = new Random();
@@ -8,7 +8,7 @@
 	{
 		for (int j = 0; j < array.GetLength(1); j++)
 		{
-		    array[i, j] = rnd.NextDouble() * 100;
+		    array[i, j] = Math.Round(rnd.NextDouble() * 10, 2);     
 		}
 	} 
     return array;
@@ -20,11 +20,11 @@ void PrintArray(double[,] array)
 	{
 		for (int j = 0; j < array.GetLength(1); j++)
 		{
-			Console.Write($"{array[i, j]:0.00}\t"); 
+			Console.Write($"{array[i, j]}\t"); 
 		}
 	Console.WriteLine();
 	} 
 }
 
-double[,] array = FillArray(5, 4);
+double[,] array = FillArray(5, 4, 10, 100);
 PrintArray(array);
