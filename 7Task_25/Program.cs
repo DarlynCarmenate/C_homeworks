@@ -50,5 +50,5 @@ int x = Prompt("Enter x: ");
 int y = Prompt("Enter y: ");
 
 if(ElementExist(arr, x, y))
-Console.WriteLine($"The element is: {arr[x, y]}");
+Console.WriteLine($"The element is: {arr[x - 1, y - 1]}");
 else Console.WriteLine("No element");
