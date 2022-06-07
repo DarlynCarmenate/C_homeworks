@@ -37,7 +37,7 @@ void PrintArray(int[,] array)
 
 bool ElementExist(int[,] arr, int x, int y)
 {
-    if (x > arr.GetLength(0) || y > arr.GetLength(1))
+    if (x > arr.GetLength(0) + 1 || x < 10 || y > arr.GetLength(1) + 1 || y < 10)
     {
         return false;
     }
