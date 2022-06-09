@@ -1,5 +1,12 @@
 ﻿// Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
 
+int Prompt(string message)
+{
+	Console.Write(message);
+	string strValue = Console.ReadLine();
+	int value = int.Parse (strValue);
+	return value;
+}
 
 void Print(int[,] arr)
 {
@@ -38,10 +45,8 @@ int[,] MatrixProduct(int[,] arr_first, int[,] arr_second)
 }
 
 
-Console.Write("Enter the number of rows: ");
-int row = int.Parse(Console.ReadLine());
-Console.Write("Enter the number of columns: ");
-int column = int.Parse(Console.ReadLine());
+int row = Prompt("Enter the number of rows: ");
+int column = Prompt("Enter the number of columns: ");
 
 int[,] arr_1 = MassNums(row, column, 0, 5);
 Print(arr_1);
