@@ -41,7 +41,7 @@ int LowestSum(int[,] matr)
             sum += matr[i, j];
         }
         arr[k] = sum;
-        Console.Write($"{arr[k]} ");
+        Console.Write($"{arr[k], 6} ");
         k++;
     }
     Console.WriteLine();
